@@ -1,4 +1,5 @@
 import { createSelector } from 'reselect';
+import ShopActionTypes from './shop.types';
 
 const selectShop = state => state.shop;
 
@@ -26,3 +27,13 @@ export const selectCollection = collectionUrlParam =>
 //             collection => collection.id === COLLECTION_ID_MAP[collectionUrlParam]
 //         )
 // );
+
+export const selectIsCollectionFetching = createSelector(
+  [selectShop],
+  shop => shop.isFetching
+);
+
+export const selectIsCollectionsLoaded = createSelector(
+  [selectShop],
+  shop => !!shop.collections
+);
