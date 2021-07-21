@@ -1,4 +1,4 @@
-import express, { static } from 'express';
+const express = require('express');
 import { json, urlencoded } from 'body-parser';
 import { join } from 'path';
 
