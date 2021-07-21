@@ -27,7 +27,7 @@
   },
   "engines": {
     "node": "14.x",
-    "npm": "6.x"
+    "npm": "7.x"
   },
   "devDependencies": {
     "react-dom": "^16.14.0",
